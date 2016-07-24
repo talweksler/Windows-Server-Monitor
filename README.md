@@ -1,7 +1,7 @@
 # Windows-Server-Monitor
 ### Allow memory and disk space monitoring on Windows based server. Can be used in cloud base servers where no alerts are available.
 
-Edit the App.config file and add your info:
+Rename the App.config.example file and add your info:
 - SLACK_URL - a slack webhook url
 - MACHINE - the name of the machine - use this to track the server
 - TO_EMAILS - a comma seperated list of email address to send the notification.
