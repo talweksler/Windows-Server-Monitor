@@ -91,6 +91,11 @@ namespace Server_Monitor
 
                 MailMessage mail = new MailMessage();
                 string toEmails = ConfigurationManager.AppSettings["TO_EMAILS"];
+                if (string.IsNullOrEmpty(toEmails))
+                {
+                    return;
+                }
+
                 string emailFromAddress = ConfigurationManager.AppSettings["EMAIL_FROM_ADDRESS"];
                 string emailFromDisplay = ConfigurationManager.AppSettings["EMAIL_FROM_DISPLAY"];
                 mail.From = new MailAddress(emailFromAddress, emailFromDisplay);
