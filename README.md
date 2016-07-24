@@ -1,5 +1,5 @@
 # Windows-Server-Monitor
-Allow memory and disk space monitoring on Windows based server. Can be used in cloud base servers where no alerts are available.
+## Allow memory and disk space monitoring on Windows based server. Can be used in cloud base servers where no alerts are available.
 
 Edit the App.config file and add your info:
 - SLACK_URL - a slack webhook url
